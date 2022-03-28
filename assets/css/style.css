@@ -10,13 +10,13 @@ body {
     font-family: Helvetica, Arial, sans-serif;
   }
 
+ /* apply styles to <header> */
  /* Applies 20px to the top and bottom, then 35px to the left and right */
  header {
     padding: 20px 35px;
     background-color: #39a6b2;
   }
 
-/* apply styles to <header> */
   header h1{ 
       font-weight: bold;
       font-size: 36px;
@@ -65,7 +65,7 @@ body {
     width: 500px;
     color: #024e76;
     position: absolute;
-    bottom: 100px;
+    bottom: 120px;
     right: 140px;
   }
 
