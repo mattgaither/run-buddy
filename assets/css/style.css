@@ -128,17 +128,6 @@ body {
       text-align: center;
   }
 
-  /*
-  .intro h2 {
-      font-size: 55px;
-      color:#024e76;
-      margin-bottom: 35px;
-      padding: 0 100px 20px 100px;
-      border-bottom: 3px solid #fce138;
-      display: inline-block;
-  }
-  */
-
   .intro p {
       line-height: 1.7;
       color: #39a6b2;
@@ -151,17 +140,6 @@ body {
        text-align: center;
        background: #fce138;
    }
-
-   /*
-   .steps h2 { 
-       font-size: 55px;
-       color: #024e76;
-       margin-bottom: 35px;
-       padding: 0 100px 20px 100px;
-       border-color: #39a6b2;
-       border-bottom: 3px solid;
-   } 
-   */
 
    .section-title { 
        font-size: 55px;
@@ -203,4 +181,3 @@ body {
     .steps span { 
         font-size: 38px;
     }
-    
