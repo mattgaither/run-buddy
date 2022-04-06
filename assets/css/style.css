@@ -271,3 +271,12 @@ body {
     }
 
     /* REACH OUT STYLES END */
+
+    /* Utilites */
+    .text-left {
+        text-align: left;
+    }
+
+    .text-right {
+        text-align: right;
+    }
