@@ -193,22 +193,41 @@ body {
 
    .step h3 { 
        color: #024e76;
-       font-size: 45px;
+       font-size: 46px;
+       flex: 1 30%;
     }
 
     .step-text p { 
         color: #39a6b2;
-        font-size: 23 px;
+        font-size: 18 px;
     }
 
     .step-text h4{
-        font-size: 26;
+        font-size: 26px;
         line-height: 1.5;
         color: #024e76;
     }
 
-    .trainers { 
+    .step-info {
+        flex: 2 70%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
+
+    .step-img {
+        flex: 1 12%;
+        margin-right: 20%;
+    }
+
+    .step-img img {
+        max-width: 100%;
+    }
+
+    .step-text {
+        flex: 12;
+    }
+    
 
     .trainer { 
         width: 900px;
