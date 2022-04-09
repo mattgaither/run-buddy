@@ -25,6 +25,14 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
   }
 
   header h1{ 
@@ -32,6 +40,7 @@ body {
       font-size: 36px;
       color:var(--primary-color);
       margin:0;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   header a{
@@ -55,6 +64,14 @@ body {
       padding: 10px 15px;
       font-weight:lighter;
       font-size: 1.55vw;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  header nav ul li a:hover {
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      border-radius: 15px;
+      text-shadow: none;
   }
 
   section {
@@ -63,13 +80,15 @@ body {
 
   /* Hero Style Start */
   .hero{
-      background-image: url("../images/hero-bg.jpg");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: flex-start;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
   }
 
   .hero-cta {
@@ -85,15 +104,18 @@ body {
       font-style: italic;
       font-size: 55px;
       color: var(--primary-color);
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   .hero-form{
     border: 3px solid var(--secondary-color);
-    background-color: var(--primary-color);
+    background-color: rgba(252, 225, 56, 0.8);
     padding: 20px;
     color: var(--secondary-color);
     width: 40%;
     margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
   }
 
   .hero-form h3{
@@ -113,19 +135,33 @@ body {
       color: var(--secondary-color);
       width: 100%;
       margin-bottom: 15px;
+      border-radius: 10px;
+  }
+
+  .form-input:focus {
+      background-color: rgba(225, 225, 225, 1);
+      outline: none;
   }
 
   .hero-form label {
       margin: 0 5px;
   }
 
-  .hero-form  button {
+  .hero-form button {
       color: var(--primary-color);
       background-color: var(--secondary-color);
       border: none;
       padding: 10px 20px;
       font-size: 16px;
+      border-radius: 10px;
   }
+
+  .hero-form button:hover {
+      background-color: var(--tertiary-color);
+  }
+
+  
+
   /* HERO STYLES END */
 
   footer { 
@@ -192,11 +228,15 @@ body {
        margin: 50px auto;
        padding-bottom: 50px;
        width: 80%;
-       border-bottom: 1px solid var(--tertiary-color);
        display: flex;
        flex-wrap: wrap;
        align-items: center;
        justify-content: space-between;
+       border-bottom: 1px solid var(--tertiary-color);
+   }
+
+   .step:last-child {
+       border-bottom: none;
    }
 
    .step h3 { 
@@ -332,6 +372,14 @@ body {
         width: 100%;
         margin-bottom: 15px;
         margin-top: 5px;
+        border-radius: 10px;
+        /* adding an transparent background here  */
+    }
+
+    /* create a new css rule for focus state */
+    .contact-form input:focus, .contact-form textarea:focus {
+        background-color: rgba(255,255,255, 1);
+        outline: none;
     }
 
     .contact-form button {
@@ -342,6 +390,12 @@ body {
         text-align: center;
         padding: 15px 0;
         font-size: 16px;
+        border-radius: 10px;
+    }
+
+    .contact-form button:hover {
+        color: var(--primary-color);
+        background: var(--tertiary-color);
     }
 
     .contact-info a {
@@ -368,6 +422,7 @@ body {
      header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
 
     header h1 {
@@ -413,7 +468,7 @@ body {
 }
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
       section {
           padding: 30px 15px;
       }
@@ -442,7 +497,7 @@ body {
     }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
+@media screen and (max-width: 575px) {
       .hero-form button {
         width: 100%;
       }
